@@ -1,0 +1,43 @@
+utool: /home/simon/Tools/uTool
+bios:
+  upgrade:
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+  download:
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+bmc:
+  upgrade:
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+  download:
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
