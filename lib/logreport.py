@@ -1,11 +1,24 @@
 import os
 import shutil
 import logging
+from textwrap import dedent, indent
 
 
 CURDIR = os.path.dirname(os.path.abspath(__file__))
 HOMEDIR = os.sep.join(CURDIR.split(os.sep)[:-1])
 LOGPATH = os.path.join(HOMEDIR, 'reports')
+
+
+def delreports():
+    if os.listdir(LOGPATH):
+        ans = input('Reports is exist,Delete Reports [Y/N]:')
+        if ans.lower() in ['y', 'yes']:
+            for file in os.listdir(LOGPATH):
+                logfile = os.path.join(LOGPATH, file)
+                if os.path.isdir(logfile):
+                    shutil.rmtree(os.path.join(LOGPATH, file))
+                else:
+                    os.remove(logfile)
 
 
 def initlogger(file):
@@ -26,23 +39,11 @@ def initlogger(file):
     return logger
 
 
-def initreports():
-    if os.listdir(LOGPATH):
-        ans = input('Reports is exist,Delete Reports [Y/N]:')
-        if ans.lower() in ['y', 'yes']:
-            for file in os.listdir(LOGPATH):
-                logfile = os.path.join(LOGPATH, file)
-                if os.path.isdir(logfile):
-                    shutil.rmtree(os.path.join(LOGPATH, file))
-                else:
-                    os.remove(logfile)
-
-
-def put_log(file, info):
-    logfile = os.path.join(LOGPATH, file)
-    with open(logfile, 'a') as f:
-        f.write(info)
+def put_log(filename, msg):
+    file = os.path.join(LOGPATH, filename)
+    with open(file, 'a') as f:
+        f.write(msg)
 
 
 if __name__ == '__main__':
-    init()
+    initlogger('test.log')
