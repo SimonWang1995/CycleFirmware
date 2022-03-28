@@ -1,5 +1,5 @@
 utool: /home/simon/Tools/uTool
-bios:
+BIOS:
   upgrade:
     - image:
         name: 1.23.06.bin
@@ -20,7 +20,7 @@ bios:
     - image:
         name: 1.23.06.bin
         version: 1.23.06
-bmc:
+BMC:
   upgrade:
     - image:
         name: 1.23.06.bin

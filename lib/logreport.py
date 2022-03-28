@@ -1,7 +1,7 @@
 import os
 import shutil
 import logging
-from textwrap import dedent, indent
+from textwrap import dedent
 
 
 CURDIR = os.path.dirname(os.path.abspath(__file__))
@@ -42,7 +42,7 @@ def initlogger(file):
 def put_log(filename, msg):
     file = os.path.join(LOGPATH, filename)
     with open(file, 'a') as f:
-        f.write(msg)
+        f.write(msg + '\n')
 
 
 if __name__ == '__main__':
