@@ -12,7 +12,7 @@ from lib.logreport import initlogger, delreports, put_log
 from lib.configparser import ConfigParser
 
 
-HOMEDIR = os.path.dirname(__file__)
+HOMEDIR = os.path.dirname(os.path.abspath(__file__))
 LOGDIR = os.path.join(HOMEDIR, 'reports')
 IMGDIR = os.path.join(HOMEDIR, 'images')
 
@@ -47,7 +47,8 @@ class FirmwareFlash:
             res = re.search("({.*})", out, re.I|re.M|re.S).group()
             res = json.loads(res)
             put_log(self.flashlog, out)
-            logger.info(' - Execute Result:' + str(res))
+            logger.info(' - Execute Result:')
+            logger.info('   ' + str(res))
         except RuntimeError as e:
             logger.error(e)
 
@@ -109,27 +110,27 @@ class CycleFlash(FirmwareFlash):
         powercycle = IPMI + ' chassis power cycle'
         powerstatus = IPMI + ' chassis power status'
         if self.flashtype in ['CPLD', 'BIOS']:
-            logger.info('Power Cycle for Firmware Activete')
+            logger.info('Starting Power Cycle Trigger Firmware Active')
             logger.info(' - Excute Command: ' + powercycle)
             out, err = excute(powercycle)
-            logger.info(' - Command Return:' + out)
+            logger.info(' - Command Return: ' + out)
         else:
             pass
 
     def wait_active(self):
-        os_up = 1000
-        bmc_up = 80
+        wait_os_up = 1000
+        wait_bmc_up = 80
         flag = False
         if self.flashtype in ['CPLD', 'BIOS']:
-            time.sleep(os_up)
+            time.sleep(wait_os_up)
             for i in range(10):
                 if os.system('ping -c 1 {0} > /dev/null 2>&1'.format(HOSTIP)):
                     flag = True
                     break
                 time.sleep(5)
-            raise RuntimeError('Host is Hang, Can\'t Ping Host:' + HOSTIP)
+            # raise RuntimeError('Host is Hang, Can\'t Ping Host:' + HOSTIP)
         else:
-            time.sleep(bmc_up)
+            time.sleep(wait_bmc_up)
             for i in range(10):
                 pass
             raise RuntimeError('BMC is dead')
@@ -171,8 +172,8 @@ class CycleFlash(FirmwareFlash):
             pre_ver = self.getver()
             self.res['Pre Version'] = pre_ver
             flashimage, flashversion = self.select_image(op)
-            self.res['Flash Version'] = flashversion
-            self.res['Flash Image'] = flashimage
+            self.res['Upgrade Version'] = flashversion
+            self.res['Upgrade Image'] = flashimage
             logger.info(self.template.format(self.split_line, str(count), self.flashtype,
                                              op, pre_ver, flashversion, flashimage))
             put_log(self.flashlog, 'N0. {0} Flash {1} firmware {2}\n'.format(str(count), self.flashtype, op))
