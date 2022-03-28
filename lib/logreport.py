@@ -25,17 +25,14 @@ def initlogger(file):
     logger = logging.getLogger(__name__)
     logger.setLevel(level=logging.DEBUG)
     logfile = os.path.join(LOGPATH, file)
-    hander = logging.FileHandler(logfile + '.debug')
+    hander = logging.FileHandler(logfile)
     hander.setLevel(logging.DEBUG)
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     hander.setFormatter(formatter)
-    hander1 = logging.FileHandler(logfile)
-    hander1.setLevel(logging.INFO)
     console = logging.StreamHandler()
     console.setLevel(logging.DEBUG)
     logger.addHandler(console)
     logger.addHandler(hander)
-    logger.addHandler(hander1)
     return logger
 
 

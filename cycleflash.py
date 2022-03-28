@@ -19,6 +19,11 @@ IMGDIR = os.path.join(HOMEDIR, 'images')
 
 
 class FirmwareFlash:
+    """
+    uTool outband Flash Firmware
+    request one arg flashtype
+    flashtype Choice from BIOS/BMC/CPLD/PSU
+    """
     def __init__(self, flashtype):
         self.uTool = uTool
         self.flashtype = flashtype
@@ -32,6 +37,7 @@ class FirmwareFlash:
         ]
 
     def flash(self, image):
+        """Flash Firmware, Request a arg: image"""
         if not os.path.exists(image):
             raise RuntimeError("No Such Image: " + image)
         flashcmd = '{uTool} -H {ip} -U {username} -P {password} fwupdate -u {image} -t {flashtype} -e auto'.format(
@@ -55,6 +61,7 @@ class FirmwareFlash:
             logger.error(e)
 
     def getver(self):
+        """Get Firmware Version"""
         self.getvercmd = '{uTool} -H {ip} -U {username} -P {password} getfw'.format(
             uTool=self.uTool, **args
         )
@@ -67,6 +74,11 @@ class FirmwareFlash:
 
 
 class CycleFlash(FirmwareFlash):
+    """
+    Utool Outband Cycle Flash Firmware(BIOS/CPLD/BMC/PSU)
+    Upgrade Image or Download Image Random choice from config file
+    Request a arg: flashtype choice BIOS/BMC/CPLD/PSU
+    """
     def __init__(self, flashtype):
         super().__init__(flashtype)
         self.flashcfg = config.get_flashcfg(flashtype)
@@ -127,7 +139,7 @@ class CycleFlash(FirmwareFlash):
             logger.info('Waiting {0} Seconds for Host Up'.format(str(wait_os_up)))
             time.sleep(wait_os_up)
             for i in range(10):
-                if os.system('ping -c 1 {0} > /dev/null 2>&1'.format(HOSTIP)):
+                if not os.system('ping -c 1 {0} > /dev/null 2>&1'.format(HOSTIP)):
                     flag = True
                     break
                 logger.info('Retry Connect Host {0} times'.format(str(i)))
@@ -190,6 +202,7 @@ class CycleFlash(FirmwareFlash):
             self.res['Upgrade Image'] = flashimage
             logger.info(self.template.format(self.split_line, str(count), self.flashtype,
                                              op, pre_ver, flashversion, flashimage))
+            put_log(self.flashlog, self.split_line)
             put_log(self.flashlog, 'N0. {0} Flash {1} firmware {2}\n'.format(str(count), self.flashtype, op))
             flash_res = self.flash(flashimage)
             self.activemode()
@@ -198,7 +211,7 @@ class CycleFlash(FirmwareFlash):
             self.res['Current Version'] = cur_ver
             compare_res = self.compare_ver(flashversion, cur_ver)
             self.res['Result'] = compare_res
-            put_log(self.summary_log, str(datetime.datetime.now) + str(self.res))
+            put_log(self.summary_log, str(datetime.datetime.now()) + str(self.res))
             self.res_list.append(self.res)
         self.summary()
 
