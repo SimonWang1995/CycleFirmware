@@ -1,8 +1,7 @@
 from __future__ import print_function
 import os
 import random
-import ipaddress
-import argparse
+
 import json
 import time
 import datetime
@@ -11,7 +10,7 @@ import logging
 from textwrap import dedent
 from lib.utils import excute
 from lib.logreport import put_log
-from lib.configparser import get_utool, get_flashcfg, get_hostinfo
+from lib.configparser import get_utool, get_flashcfg, 0
 
 
 HOMEDIR = os.path.dirname(os.path.abspath(__file__))
@@ -27,7 +26,7 @@ class FirmwareFlash:
     flashtype Choice from BIOS/BMC/CPLD/PSU
     """
     def __init__(self, flashtype, **kwargs):
-        self.uTool = get_utool
+        self.uTool = get_utool()
         if not os.path.isfile(self.uTool):
             raise RuntimeError('No Such Utool:' + self.uTool)
         self.flashtype = flashtype
@@ -46,7 +45,7 @@ class FirmwareFlash:
         if not os.path.exists(image):
             raise RuntimeError("No Such Image: " + image)
         flashcmd = '{uTool} -H {ip} -U {username} -P {password} fwupdate -u {image} -t {flashtype} -e auto'.format(
-            uTool=self.uTool, image=image, flashtype=self.flashtype, **bmc_cfg
+            uTool=self.uTool, image=image, flashtype=self.flashtype, **self.bmc_cfg
         )
         logger.info('Starting Flash as following Info:')
         logger.info(' - Flash Tool Path: ' + self.uTool)

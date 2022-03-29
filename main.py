@@ -1,4 +1,5 @@
 import logging
+import ipaddress
 import argparse
 import os
 from lib.logreport import init_log, delreports
