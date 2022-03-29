@@ -7,15 +7,17 @@ import json
 import time
 import datetime
 import re
+import logging
 from textwrap import dedent
 from lib.utils import excute
-from lib.logreport import initlogger, delreports, put_log
-from lib.configparser import ConfigParser
+from lib.logreport import put_log
+from lib.configparser import get_utool, get_flashcfg, get_hostinfo
 
 
 HOMEDIR = os.path.dirname(os.path.abspath(__file__))
 LOGDIR = os.path.join(HOMEDIR, 'reports')
 IMGDIR = os.path.join(HOMEDIR, 'images')
+logger = logging.getLogger(__name__)
 
 
 class FirmwareFlash:
@@ -24,9 +26,12 @@ class FirmwareFlash:
     request one arg flashtype
     flashtype Choice from BIOS/BMC/CPLD/PSU
     """
-    def __init__(self, flashtype):
-        self.uTool = uTool
+    def __init__(self, flashtype, **kwargs):
+        self.uTool = get_utool
+        if not os.path.isfile(self.uTool):
+            raise RuntimeError('No Such Utool:' + self.uTool)
         self.flashtype = flashtype
+        self.bmc_cfg = kwargs
         self.flashlog = 'Flash.log'
         self.err_keys = [
             'error',
@@ -41,7 +46,7 @@ class FirmwareFlash:
         if not os.path.exists(image):
             raise RuntimeError("No Such Image: " + image)
         flashcmd = '{uTool} -H {ip} -U {username} -P {password} fwupdate -u {image} -t {flashtype} -e auto'.format(
-            uTool=self.uTool, image=image, **args
+            uTool=self.uTool, image=image, flashtype=self.flashtype, **bmc_cfg
         )
         logger.info('Starting Flash as following Info:')
         logger.info(' - Flash Tool Path: ' + self.uTool)
@@ -63,7 +68,7 @@ class FirmwareFlash:
     def getver(self):
         """Get Firmware Version"""
         self.getvercmd = '{uTool} -H {ip} -U {username} -P {password} getfw'.format(
-            uTool=self.uTool, **args
+            uTool=self.uTool, **self.bmc_cfg
         )
         out = os.popen(self.getvercmd).read()
         ver_list = json.loads(out)['Message'][0]['Firmware']
@@ -79,9 +84,10 @@ class CycleFlash(FirmwareFlash):
     Upgrade Image or Download Image Random choice from config file
     Request a arg: flashtype choice BIOS/BMC/CPLD/PSU
     """
-    def __init__(self, flashtype):
-        super().__init__(flashtype)
-        self.flashcfg = config.get_flashcfg(flashtype)
+    def __init__(self, flashtype, loops, **kwargs):
+        super().__init__(flashtype, **kwargs)
+        self.loops = loops
+        self.flashcfg = get_flashcfg(flashtype)
         self.op_list = ['upgrade', 'download']
         self.split_line = "="*80
         self.res_list = []
@@ -100,6 +106,9 @@ class CycleFlash(FirmwareFlash):
                                """)
 
     def select_image(self, op):
+        """Random choice Flash Image
+        Request a arg : operate type (upgrade/download)
+        return image, version"""
         image = ''
         version = ''
         image_list = self.flashcfg[op]
@@ -121,6 +130,7 @@ class CycleFlash(FirmwareFlash):
             return image, version
 
     def activemode(self):
+        IPMI = 'ipmitool -I lanplus -H {ip} -U {username} -P {password}'.format(**self.bmc_cfg)
         powercycle = IPMI + ' chassis power cycle'
         powerstatus = IPMI + ' chassis power status'
         if self.flashtype in ['CPLD', 'BIOS']:
@@ -132,6 +142,8 @@ class CycleFlash(FirmwareFlash):
             pass
 
     def wait_active(self):
+        HOSTINFO = get_hostinfo()
+        HOSTIP = HOSTINFO['ip']
         wait_os_up = 1200
         wait_bmc_up = 80
         flag = False
@@ -190,7 +202,7 @@ class CycleFlash(FirmwareFlash):
                          str(self.failcount/(self.failcount+self.passcount)))
 
     def run(self):
-        for count in range(1, loops+1):
+        for count in range(1, self.loops+1):
             self.res['Count'] = count
             op = self.op_list[count % 2]
             self.res['Operate'] = op
@@ -216,37 +228,8 @@ class CycleFlash(FirmwareFlash):
         self.summary()
 
 
-def _argparser():
-    parser = argparse.ArgumentParser(description='This is Cycle Flash Program')
-    parser.add_argument('-t', '--type', action='store', dest='flashtype', choices=['BIOS', 'BMC', 'CPLD', 'PSU'],
-                        required=True, help='Flash type')
-    parser.add_argument('-c', '--cycle', type=int, dest='loops', default=100, help='input flash times')
-    group = parser.add_argument_group('BMC Info', description='This is BMC Info')
-    group.add_argument('-H', dest='ip', type=ipaddress.ip_address, required=True, help='BMC Ip Address')
-    group.add_argument('-U', dest='username', required=True, help='BMC User Name')
-    group.add_argument('-P', dest='password', required=True, help='BMC Password')
-    return parser.parse_args().__dict__
-
-
 if __name__ == '__main__':
-    args = _argparser()
-    flashtype = args['flashtype']
-    loops = args['loops']
-    HOSTIP = '192.168.0.35'
-    IPMI = 'ipmitool -I lanplus -H {ip} -U {username} -P {password}'.format(**args)
-    if os.system(IPMI + ' raw 6 1 > /dev/null 2>&1'):
-        raise RuntimeError('Check BMC Overlan Fail, Please Check BMC Info.')
-    config = ConfigParser(os.path.join(HOMEDIR, 'config.yml'))
-    uTool = config.get_utool()
-    if not os.path.exists(uTool):
-        raise RuntimeError('No Such Utool:' + uTool)
-    # flash_cfg = config.get_flashcfg(flashtype)
-    # up_images = flash_cfg['upgrade']
-    # down_images = flash_cfg['download']
-    delreports()
-    logger = initlogger('CycleFlash.log')
-    cycleflasher = CycleFlash(flashtype)
-    cycleflasher.run()
+    pass
 
 
 
