@@ -12,7 +12,8 @@ def _argparser():
     parser = argparse.ArgumentParser(description='This is Cycle Flash Program')
     parser.add_argument('-t', '--type', action='store', dest='flashtype', choices=['BIOS', 'BMC', 'CPLD', 'PSU'],
                         required=True, help='Flash type')
-    parser.add_argument('-c', '--cycle', type=int, dest='loops', default=100, help='input flash times')
+    parser.add_argument('-c', '--cycle', type=int, dest='loops', default=100,
+                        help='input flash times(default:%(default)s')
     group = parser.add_argument_group('BMC Info', description='This is BMC Info')
     group.add_argument('-H', dest='ip', type=ipaddress.ip_address, required=True, help='BMC Ip Address')
     group.add_argument('-U', dest='username', required=True, help='BMC User Name')
