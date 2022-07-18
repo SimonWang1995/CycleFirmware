@@ -1,0 +1,39 @@
+HOSTINFO:
+  ip: 192.168.0.37
+  user: root
+  password: Dis@init3
+
+utool: /home/simon/Tools/utool/utool_linux_1.51/uTool
+BIOS:
+  upgrade:
+    - image:
+        name: 1.06.00_ENC.BIN
+        version: 1.06.00
+  download:
+    - image:
+        name: 1.05.00_ENC.BIN
+        version: 1.05.00
+    - image:
+        name: 1.03.00_ENC.BIN
+        version: 1.03.00
+BMC:
+  upgrade:
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+  download:
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
+    - image:
+        name: 1.23.06.bin
+        version: 1.23.06
