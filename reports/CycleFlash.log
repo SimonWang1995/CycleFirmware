@@ -1,0 +1,2424 @@
+2022-07-08 15:28:10,524 - cycleflash - INFO - {
+    "upgrade": [
+        {
+            "image": {
+                "name": "1.06.00_ENC.BIN",
+                "version": "1.06.00"
+            }
+        }
+    ],
+    "download": [
+        {
+            "image": {
+                "name": "1.05.00_ENC.BIN",
+                "version": "1.05.00"
+            }
+        },
+        {
+            "image": {
+                "name": "1.03.00_ENC.BIN",
+                "version": "1.03.00"
+            }
+        }
+    ]
+}
+2022-07-08 15:28:19,349 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  1
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-08 15:28:19,350 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 15:28:19,350 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 15:28:19,350 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 15:28:19,350 - cycleflash - INFO -  - Execute Command:
+2022-07-08 15:28:19,350 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-08 15:28:46,467 - cycleflash - INFO -  - Execute Result:
+2022-07-08 15:28:46,467 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 15:28:46,467 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 15:28:46,467 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 15:28:46,603 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 15:28:46,604 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 15:48:55,389 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 15:48:55,390 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-08 15:48:55,390 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-08 15:48:55,390 - cycleflash - INFO - Compare PASS
+2022-07-08 15:49:05,448 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  2
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-08 15:49:05,449 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 15:49:05,449 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 15:49:05,449 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 15:49:05,449 - cycleflash - INFO -  - Execute Command:
+2022-07-08 15:49:05,449 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-08 15:49:33,396 - cycleflash - INFO -  - Execute Result:
+2022-07-08 15:49:33,397 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 15:49:33,397 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 15:49:33,397 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 15:49:33,495 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 15:49:33,495 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 16:09:42,973 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 16:09:42,973 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-08 16:09:42,973 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-08 16:09:42,974 - cycleflash - INFO - Compare PASS
+2022-07-08 16:09:51,474 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  3
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-08 16:09:51,475 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 16:09:51,475 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 16:09:51,475 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 16:09:51,475 - cycleflash - INFO -  - Execute Command:
+2022-07-08 16:09:51,475 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-08 16:10:21,882 - cycleflash - INFO -  - Execute Result:
+2022-07-08 16:10:21,883 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 16:10:21,883 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 16:10:21,883 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 16:10:21,971 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 16:10:21,972 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 16:30:30,944 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 16:30:30,944 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-08 16:30:30,944 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-08 16:30:30,944 - cycleflash - INFO - Compare PASS
+2022-07-08 16:30:39,767 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  4
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-08 16:30:39,768 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 16:30:39,768 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 16:30:39,768 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 16:30:39,768 - cycleflash - INFO -  - Execute Command:
+2022-07-08 16:30:39,768 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-08 16:31:09,493 - cycleflash - INFO -  - Execute Result:
+2022-07-08 16:31:09,493 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 16:31:09,494 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 16:31:09,494 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 16:31:09,611 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 16:31:09,612 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 16:51:18,777 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 16:51:18,778 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-08 16:51:18,778 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-08 16:51:18,778 - cycleflash - INFO - Compare PASS
+2022-07-08 16:51:27,324 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  5
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-08 16:51:27,325 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 16:51:27,325 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 16:51:27,325 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 16:51:27,325 - cycleflash - INFO -  - Execute Command:
+2022-07-08 16:51:27,325 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-08 16:51:54,642 - cycleflash - INFO -  - Execute Result:
+2022-07-08 16:51:54,643 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 16:51:54,643 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 16:51:54,643 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 16:51:54,773 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 16:51:54,773 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 17:12:04,830 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 17:12:04,830 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-08 17:12:04,830 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-08 17:12:04,830 - cycleflash - INFO - Compare PASS
+2022-07-08 17:12:15,001 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  6
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-08 17:12:15,002 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 17:12:15,002 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 17:12:15,002 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 17:12:15,002 - cycleflash - INFO -  - Execute Command:
+2022-07-08 17:12:15,002 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-08 17:12:42,561 - cycleflash - INFO -  - Execute Result:
+2022-07-08 17:12:42,561 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 17:12:42,562 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 17:12:42,562 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 17:12:42,654 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 17:12:42,654 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 17:32:51,224 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 17:32:51,224 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-08 17:32:51,224 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-08 17:32:51,224 - cycleflash - INFO - Compare PASS
+2022-07-08 17:32:59,865 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  7
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-08 17:32:59,865 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 17:32:59,866 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 17:32:59,866 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 17:32:59,866 - cycleflash - INFO -  - Execute Command:
+2022-07-08 17:32:59,866 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-08 17:33:29,683 - cycleflash - INFO -  - Execute Result:
+2022-07-08 17:33:29,683 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 17:33:29,684 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 17:33:29,684 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 17:33:29,785 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 17:33:29,785 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 17:53:38,813 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 17:53:38,813 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-08 17:53:38,813 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-08 17:53:38,813 - cycleflash - INFO - Compare PASS
+2022-07-08 17:53:47,916 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  8
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-08 17:53:47,917 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 17:53:47,917 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 17:53:47,917 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 17:53:47,917 - cycleflash - INFO -  - Execute Command:
+2022-07-08 17:53:47,917 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-08 17:54:18,404 - cycleflash - INFO -  - Execute Result:
+2022-07-08 17:54:18,404 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 17:54:18,405 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 17:54:18,405 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 17:54:18,523 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 17:54:18,524 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 18:14:27,725 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 18:14:27,725 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-08 18:14:27,725 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-08 18:14:27,726 - cycleflash - INFO - Compare PASS
+2022-07-08 18:14:36,261 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  9
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-08 18:14:36,262 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 18:14:36,262 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 18:14:36,262 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 18:14:36,262 - cycleflash - INFO -  - Execute Command:
+2022-07-08 18:14:36,262 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-08 18:15:03,610 - cycleflash - INFO -  - Execute Result:
+2022-07-08 18:15:03,610 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 18:15:03,611 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 18:15:03,611 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 18:15:03,746 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 18:15:03,746 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 18:35:14,574 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 18:35:14,574 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-08 18:35:14,574 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-08 18:35:14,574 - cycleflash - INFO - Compare PASS
+2022-07-08 18:35:23,926 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  10
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-08 18:35:23,926 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 18:35:23,926 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 18:35:23,926 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 18:35:23,927 - cycleflash - INFO -  - Execute Command:
+2022-07-08 18:35:23,927 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-08 18:35:51,544 - cycleflash - INFO -  - Execute Result:
+2022-07-08 18:35:51,545 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 18:35:51,545 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 18:35:51,545 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 18:35:51,723 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 18:35:51,723 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 18:56:00,429 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 18:56:00,430 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-08 18:56:00,430 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-08 18:56:00,430 - cycleflash - INFO - Compare PASS
+2022-07-08 18:56:09,724 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  11
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-08 18:56:09,725 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 18:56:09,725 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 18:56:09,725 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 18:56:09,725 - cycleflash - INFO -  - Execute Command:
+2022-07-08 18:56:09,725 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-08 18:56:37,001 - cycleflash - INFO -  - Execute Result:
+2022-07-08 18:56:37,001 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 18:56:37,001 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 18:56:37,001 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 18:56:37,140 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 18:56:37,141 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 19:16:45,733 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 19:16:45,734 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-08 19:16:45,734 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-08 19:16:45,734 - cycleflash - INFO - Compare PASS
+2022-07-08 19:16:54,467 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  12
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-08 19:16:54,467 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 19:16:54,467 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 19:16:54,467 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 19:16:54,468 - cycleflash - INFO -  - Execute Command:
+2022-07-08 19:16:54,468 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-08 19:17:24,821 - cycleflash - INFO -  - Execute Result:
+2022-07-08 19:17:24,822 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 19:17:24,822 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 19:17:24,822 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 19:17:24,885 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 19:17:24,885 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 19:37:34,476 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 19:37:34,476 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-08 19:37:34,476 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-08 19:37:34,476 - cycleflash - INFO - Compare PASS
+2022-07-08 19:37:43,077 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  13
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-08 19:37:43,077 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 19:37:43,078 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 19:37:43,078 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 19:37:43,078 - cycleflash - INFO -  - Execute Command:
+2022-07-08 19:37:43,078 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-08 19:38:13,810 - cycleflash - INFO -  - Execute Result:
+2022-07-08 19:38:13,810 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 19:38:13,810 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 19:38:13,810 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 19:38:13,900 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 19:38:13,900 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 19:58:22,987 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 19:58:22,987 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-08 19:58:22,987 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-08 19:58:22,987 - cycleflash - INFO - Compare PASS
+2022-07-08 19:58:31,829 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  14
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-08 19:58:31,829 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 19:58:31,829 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 19:58:31,830 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 19:58:31,830 - cycleflash - INFO -  - Execute Command:
+2022-07-08 19:58:31,830 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-08 19:58:59,687 - cycleflash - INFO -  - Execute Result:
+2022-07-08 19:58:59,687 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 19:58:59,687 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 19:58:59,687 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 19:58:59,931 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 19:58:59,931 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 20:19:09,980 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 20:19:09,980 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-08 20:19:09,980 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-08 20:19:09,980 - cycleflash - INFO - Compare PASS
+2022-07-08 20:19:18,976 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  15
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-08 20:19:18,977 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 20:19:18,977 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 20:19:18,977 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 20:19:18,977 - cycleflash - INFO -  - Execute Command:
+2022-07-08 20:19:18,977 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-08 20:19:47,008 - cycleflash - INFO -  - Execute Result:
+2022-07-08 20:19:47,008 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 20:19:47,009 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 20:19:47,009 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 20:19:47,100 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 20:19:47,100 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 20:39:56,418 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 20:39:56,418 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-08 20:39:56,418 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-08 20:39:56,418 - cycleflash - INFO - Compare PASS
+2022-07-08 20:40:06,577 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  16
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-08 20:40:06,577 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 20:40:06,577 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 20:40:06,577 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 20:40:06,577 - cycleflash - INFO -  - Execute Command:
+2022-07-08 20:40:06,578 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-08 20:40:34,989 - cycleflash - INFO -  - Execute Result:
+2022-07-08 20:40:34,989 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 20:40:34,990 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 20:40:34,990 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 20:40:35,075 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 20:40:35,075 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 21:00:44,613 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 21:00:44,613 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-08 21:00:44,613 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-08 21:00:44,613 - cycleflash - INFO - Compare PASS
+2022-07-08 21:00:53,537 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  17
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-08 21:00:53,538 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 21:00:53,538 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 21:00:53,538 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 21:00:53,538 - cycleflash - INFO -  - Execute Command:
+2022-07-08 21:00:53,538 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-08 21:01:23,866 - cycleflash - INFO -  - Execute Result:
+2022-07-08 21:01:23,866 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 21:01:23,867 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 21:01:23,867 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 21:01:23,969 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 21:01:23,969 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 21:21:32,764 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 21:21:32,765 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-08 21:21:32,765 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-08 21:21:32,765 - cycleflash - INFO - Compare PASS
+2022-07-08 21:21:42,146 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  18
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-08 21:21:42,146 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 21:21:42,146 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 21:21:42,146 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 21:21:42,146 - cycleflash - INFO -  - Execute Command:
+2022-07-08 21:21:42,147 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-08 21:22:12,109 - cycleflash - INFO -  - Execute Result:
+2022-07-08 21:22:12,109 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 21:22:12,110 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 21:22:12,110 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 21:22:12,292 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 21:22:12,292 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 21:42:21,548 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 21:42:21,548 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-08 21:42:21,548 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-08 21:42:21,548 - cycleflash - INFO - Compare PASS
+2022-07-08 21:42:30,068 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  19
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-08 21:42:30,068 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 21:42:30,068 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 21:42:30,069 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 21:42:30,069 - cycleflash - INFO -  - Execute Command:
+2022-07-08 21:42:30,069 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-08 21:42:57,168 - cycleflash - INFO -  - Execute Result:
+2022-07-08 21:42:57,168 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 21:42:57,169 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 21:42:57,169 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 21:42:57,332 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 21:42:57,332 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 22:03:07,440 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 22:03:07,440 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-08 22:03:07,440 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-08 22:03:07,440 - cycleflash - INFO - Compare PASS
+2022-07-08 22:03:16,109 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  20
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-08 22:03:16,110 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 22:03:16,110 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 22:03:16,110 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 22:03:16,110 - cycleflash - INFO -  - Execute Command:
+2022-07-08 22:03:16,110 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-08 22:03:44,270 - cycleflash - INFO -  - Execute Result:
+2022-07-08 22:03:44,270 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 22:03:44,270 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 22:03:44,270 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 22:03:44,392 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 22:03:44,393 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 22:23:52,884 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 22:23:52,884 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-08 22:23:52,885 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-08 22:23:52,885 - cycleflash - INFO - Compare PASS
+2022-07-08 22:24:01,793 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  21
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-08 22:24:01,793 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 22:24:01,794 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 22:24:01,794 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 22:24:01,794 - cycleflash - INFO -  - Execute Command:
+2022-07-08 22:24:01,794 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-08 22:24:31,077 - cycleflash - INFO -  - Execute Result:
+2022-07-08 22:24:31,077 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 22:24:31,077 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 22:24:31,077 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 22:24:31,207 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 22:24:31,208 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 22:44:39,830 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 22:44:39,831 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-08 22:44:39,831 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-08 22:44:39,831 - cycleflash - INFO - Compare PASS
+2022-07-08 22:44:48,533 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  22
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-08 22:44:48,533 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 22:44:48,533 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 22:44:48,533 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 22:44:48,534 - cycleflash - INFO -  - Execute Command:
+2022-07-08 22:44:48,534 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-08 22:45:18,347 - cycleflash - INFO -  - Execute Result:
+2022-07-08 22:45:18,348 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 22:45:18,348 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 22:45:18,348 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 22:45:18,542 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 22:45:18,542 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 23:05:27,143 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 23:05:27,144 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-08 23:05:27,144 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-08 23:05:27,144 - cycleflash - INFO - Compare PASS
+2022-07-08 23:05:36,226 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  23
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-08 23:05:36,227 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 23:05:36,227 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 23:05:36,227 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 23:05:36,227 - cycleflash - INFO -  - Execute Command:
+2022-07-08 23:05:36,227 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-08 23:06:03,789 - cycleflash - INFO -  - Execute Result:
+2022-07-08 23:06:03,789 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 23:06:03,790 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 23:06:03,790 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 23:06:03,852 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 23:06:03,853 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 23:26:14,616 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 23:26:14,616 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-08 23:26:14,616 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-08 23:26:14,616 - cycleflash - INFO - Compare PASS
+2022-07-08 23:26:23,435 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  24
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-08 23:26:23,435 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 23:26:23,436 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 23:26:23,436 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 23:26:23,436 - cycleflash - INFO -  - Execute Command:
+2022-07-08 23:26:23,436 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-08 23:26:51,452 - cycleflash - INFO -  - Execute Result:
+2022-07-08 23:26:51,452 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 23:26:51,453 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 23:26:51,453 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 23:26:51,579 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 23:26:51,579 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-08 23:47:00,512 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-08 23:47:00,512 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-08 23:47:00,512 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-08 23:47:00,512 - cycleflash - INFO - Compare PASS
+2022-07-08 23:47:09,784 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  25
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-08 23:47:09,784 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-08 23:47:09,784 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-08 23:47:09,785 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-08 23:47:09,785 - cycleflash - INFO -  - Execute Command:
+2022-07-08 23:47:09,785 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-08 23:47:36,654 - cycleflash - INFO -  - Execute Result:
+2022-07-08 23:47:36,654 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-08 23:47:36,654 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-08 23:47:36,654 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-08 23:47:36,750 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-08 23:47:36,750 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 00:07:45,857 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 00:07:45,857 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 00:07:45,857 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 00:07:45,857 - cycleflash - INFO - Compare PASS
+2022-07-09 00:07:54,748 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  26
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 00:07:54,748 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 00:07:54,748 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 00:07:54,748 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 00:07:54,749 - cycleflash - INFO -  - Execute Command:
+2022-07-09 00:07:54,749 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 00:08:25,062 - cycleflash - INFO -  - Execute Result:
+2022-07-09 00:08:25,062 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 00:08:25,063 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 00:08:25,063 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 00:08:25,138 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 00:08:25,138 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 00:28:33,842 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 00:28:33,842 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 00:28:33,842 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 00:28:33,842 - cycleflash - INFO - Compare PASS
+2022-07-09 00:28:43,137 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  27
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 00:28:43,138 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 00:28:43,138 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 00:28:43,138 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 00:28:43,138 - cycleflash - INFO -  - Execute Command:
+2022-07-09 00:28:43,138 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 00:29:13,839 - cycleflash - INFO -  - Execute Result:
+2022-07-09 00:29:13,839 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 00:29:13,840 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 00:29:13,840 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 00:29:13,950 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 00:29:13,950 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 00:49:22,796 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 00:49:22,796 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 00:49:22,796 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 00:49:22,796 - cycleflash - INFO - Compare PASS
+2022-07-09 00:49:31,834 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  28
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 00:49:31,835 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 00:49:31,835 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 00:49:31,835 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 00:49:31,835 - cycleflash - INFO -  - Execute Command:
+2022-07-09 00:49:31,835 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 00:50:00,258 - cycleflash - INFO -  - Execute Result:
+2022-07-09 00:50:00,258 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 00:50:00,258 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 00:50:00,258 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 00:50:00,383 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 00:50:00,383 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 01:10:10,166 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 01:10:10,166 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 01:10:10,166 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 01:10:10,166 - cycleflash - INFO - Compare PASS
+2022-07-09 01:10:18,839 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  29
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 01:10:18,839 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 01:10:18,840 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 01:10:18,840 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 01:10:18,840 - cycleflash - INFO -  - Execute Command:
+2022-07-09 01:10:18,840 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 01:10:47,304 - cycleflash - INFO -  - Execute Result:
+2022-07-09 01:10:47,305 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 01:10:47,305 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 01:10:47,305 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 01:10:47,370 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 01:10:47,370 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 01:30:56,282 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 01:30:56,283 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 01:30:56,283 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 01:30:56,283 - cycleflash - INFO - Compare PASS
+2022-07-09 01:31:06,073 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  30
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 01:31:06,073 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 01:31:06,074 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 01:31:06,074 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 01:31:06,074 - cycleflash - INFO -  - Execute Command:
+2022-07-09 01:31:06,074 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 01:31:34,412 - cycleflash - INFO -  - Execute Result:
+2022-07-09 01:31:34,412 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 01:31:34,413 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 01:31:34,413 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 01:31:34,479 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 01:31:34,479 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 01:51:43,091 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 01:51:43,091 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 01:51:43,092 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 01:51:43,092 - cycleflash - INFO - Compare PASS
+2022-07-09 01:51:51,720 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  31
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 01:51:51,721 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 01:51:51,721 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 01:51:51,721 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 01:51:51,721 - cycleflash - INFO -  - Execute Command:
+2022-07-09 01:51:51,721 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 01:52:22,316 - cycleflash - INFO -  - Execute Result:
+2022-07-09 01:52:22,316 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 01:52:22,316 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 01:52:22,316 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 01:52:22,458 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 01:52:22,459 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 02:12:31,446 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 02:12:31,446 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 02:12:31,446 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 02:12:31,446 - cycleflash - INFO - Compare PASS
+2022-07-09 02:12:40,273 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  32
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 02:12:40,274 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 02:12:40,274 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 02:12:40,274 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 02:12:40,274 - cycleflash - INFO -  - Execute Command:
+2022-07-09 02:12:40,274 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 02:13:11,892 - cycleflash - INFO -  - Execute Result:
+2022-07-09 02:13:11,892 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 02:13:11,892 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 02:13:11,892 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 02:13:12,012 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 02:13:12,012 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 02:33:20,964 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 02:33:20,965 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 02:33:20,965 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 02:33:20,965 - cycleflash - INFO - Compare PASS
+2022-07-09 02:33:29,790 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  33
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 02:33:29,790 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 02:33:29,790 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 02:33:29,790 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 02:33:29,790 - cycleflash - INFO -  - Execute Command:
+2022-07-09 02:33:29,790 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 02:33:57,728 - cycleflash - INFO -  - Execute Result:
+2022-07-09 02:33:57,728 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 02:33:57,728 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 02:33:57,728 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 02:33:57,841 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 02:33:57,841 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 02:54:07,891 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 02:54:07,891 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 02:54:07,891 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 02:54:07,891 - cycleflash - INFO - Compare PASS
+2022-07-09 02:54:17,059 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  34
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 02:54:17,060 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 02:54:17,060 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 02:54:17,060 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 02:54:17,060 - cycleflash - INFO -  - Execute Command:
+2022-07-09 02:54:17,060 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 02:54:45,168 - cycleflash - INFO -  - Execute Result:
+2022-07-09 02:54:45,168 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 02:54:45,169 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 02:54:45,169 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 02:54:45,327 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 02:54:45,327 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 03:14:54,297 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 03:14:54,297 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 03:14:54,297 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 03:14:54,297 - cycleflash - INFO - Compare PASS
+2022-07-09 03:15:03,136 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  35
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 03:15:03,137 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 03:15:03,137 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 03:15:03,137 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 03:15:03,137 - cycleflash - INFO -  - Execute Command:
+2022-07-09 03:15:03,137 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 03:15:31,568 - cycleflash - INFO -  - Execute Result:
+2022-07-09 03:15:31,568 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 03:15:31,569 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 03:15:31,569 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 03:15:31,668 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 03:15:31,669 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 03:35:41,308 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 03:35:41,309 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 03:35:41,309 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 03:35:41,309 - cycleflash - INFO - Compare PASS
+2022-07-09 03:35:50,029 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  36
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 03:35:50,029 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 03:35:50,029 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 03:35:50,029 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 03:35:50,030 - cycleflash - INFO -  - Execute Command:
+2022-07-09 03:35:50,030 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 03:36:20,704 - cycleflash - INFO -  - Execute Result:
+2022-07-09 03:36:20,704 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 03:36:20,705 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 03:36:20,705 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 03:36:20,795 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 03:36:20,796 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 03:56:29,810 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 03:56:29,810 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 03:56:29,810 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 03:56:29,810 - cycleflash - INFO - Compare PASS
+2022-07-09 03:56:38,688 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  37
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 03:56:38,688 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 03:56:38,689 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 03:56:38,689 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 03:56:38,689 - cycleflash - INFO -  - Execute Command:
+2022-07-09 03:56:38,689 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 03:57:06,620 - cycleflash - INFO -  - Execute Result:
+2022-07-09 03:57:06,620 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 03:57:06,621 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 03:57:06,621 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 03:57:06,859 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 03:57:06,860 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 04:17:16,648 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 04:17:16,648 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 04:17:16,648 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 04:17:16,648 - cycleflash - INFO - Compare PASS
+2022-07-09 04:17:25,220 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  38
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 04:17:25,221 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 04:17:25,221 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 04:17:25,221 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 04:17:25,221 - cycleflash - INFO -  - Execute Command:
+2022-07-09 04:17:25,221 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 04:17:53,747 - cycleflash - INFO -  - Execute Result:
+2022-07-09 04:17:53,747 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 04:17:53,748 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 04:17:53,748 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 04:17:53,831 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 04:17:53,831 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 04:38:02,877 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 04:38:02,877 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 04:38:02,877 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 04:38:02,877 - cycleflash - INFO - Compare PASS
+2022-07-09 04:38:12,139 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  39
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 04:38:12,139 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 04:38:12,140 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 04:38:12,140 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 04:38:12,140 - cycleflash - INFO -  - Execute Command:
+2022-07-09 04:38:12,140 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 04:38:40,064 - cycleflash - INFO -  - Execute Result:
+2022-07-09 04:38:40,064 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 04:38:40,065 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 04:38:40,065 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 04:38:40,263 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 04:38:40,263 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 04:58:49,264 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 04:58:49,265 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 04:58:49,265 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 04:58:49,265 - cycleflash - INFO - Compare PASS
+2022-07-09 04:58:57,711 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  40
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 04:58:57,711 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 04:58:57,712 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 04:58:57,712 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 04:58:57,712 - cycleflash - INFO -  - Execute Command:
+2022-07-09 04:58:57,712 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 04:59:27,823 - cycleflash - INFO -  - Execute Result:
+2022-07-09 04:59:27,823 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 04:59:27,824 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 04:59:27,824 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 04:59:27,927 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 04:59:27,927 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 05:19:37,068 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 05:19:37,068 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 05:19:37,069 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 05:19:37,069 - cycleflash - INFO - Compare PASS
+2022-07-09 05:19:45,730 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  41
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 05:19:45,731 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 05:19:45,731 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 05:19:45,731 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 05:19:45,731 - cycleflash - INFO -  - Execute Command:
+2022-07-09 05:19:45,731 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 05:20:16,063 - cycleflash - INFO -  - Execute Result:
+2022-07-09 05:20:16,064 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 05:20:16,064 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 05:20:16,064 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 05:20:16,169 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 05:20:16,170 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 05:40:25,044 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 05:40:25,045 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 05:40:25,045 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 05:40:25,045 - cycleflash - INFO - Compare PASS
+2022-07-09 05:40:34,146 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  42
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 05:40:34,147 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 05:40:34,147 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 05:40:34,147 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 05:40:34,147 - cycleflash - INFO -  - Execute Command:
+2022-07-09 05:40:34,147 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 05:41:01,959 - cycleflash - INFO -  - Execute Result:
+2022-07-09 05:41:01,959 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 05:41:01,960 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 05:41:01,960 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 05:41:02,027 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 05:41:02,027 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 06:01:12,071 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 06:01:12,072 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 06:01:12,072 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 06:01:12,072 - cycleflash - INFO - Compare PASS
+2022-07-09 06:01:20,749 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  43
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 06:01:20,750 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 06:01:20,750 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 06:01:20,750 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 06:01:20,750 - cycleflash - INFO -  - Execute Command:
+2022-07-09 06:01:20,750 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 06:01:48,271 - cycleflash - INFO -  - Execute Result:
+2022-07-09 06:01:48,271 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 06:01:48,272 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 06:01:48,272 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 06:01:48,358 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 06:01:48,358 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 06:21:57,291 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 06:21:57,292 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 06:21:57,292 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 06:21:57,292 - cycleflash - INFO - Compare PASS
+2022-07-09 06:22:07,020 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  44
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 06:22:07,020 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 06:22:07,021 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 06:22:07,021 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 06:22:07,021 - cycleflash - INFO -  - Execute Command:
+2022-07-09 06:22:07,021 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 06:22:35,168 - cycleflash - INFO -  - Execute Result:
+2022-07-09 06:22:35,168 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 06:22:35,168 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 06:22:35,168 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 06:22:35,250 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 06:22:35,251 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 06:42:44,233 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 06:42:44,233 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 06:42:44,233 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 06:42:44,233 - cycleflash - INFO - Compare PASS
+2022-07-09 06:42:53,008 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  45
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 06:42:53,009 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 06:42:53,009 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 06:42:53,009 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 06:42:53,009 - cycleflash - INFO -  - Execute Command:
+2022-07-09 06:42:53,009 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 06:43:22,693 - cycleflash - INFO -  - Execute Result:
+2022-07-09 06:43:22,693 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 06:43:22,693 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 06:43:22,694 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 06:43:22,766 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 06:43:22,767 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 07:03:31,994 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 07:03:31,994 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 07:03:31,995 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 07:03:31,995 - cycleflash - INFO - Compare PASS
+2022-07-09 07:03:40,540 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  46
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 07:03:40,540 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 07:03:40,541 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 07:03:40,541 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 07:03:40,541 - cycleflash - INFO -  - Execute Command:
+2022-07-09 07:03:40,541 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 07:04:10,386 - cycleflash - INFO -  - Execute Result:
+2022-07-09 07:04:10,386 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 07:04:10,386 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 07:04:10,386 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 07:04:10,597 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 07:04:10,597 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 07:24:19,496 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 07:24:19,496 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 07:24:19,496 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 07:24:19,496 - cycleflash - INFO - Compare PASS
+2022-07-09 07:24:28,038 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  47
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 07:24:28,038 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 07:24:28,038 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 07:24:28,038 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 07:24:28,038 - cycleflash - INFO -  - Execute Command:
+2022-07-09 07:24:28,039 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 07:24:55,277 - cycleflash - INFO -  - Execute Result:
+2022-07-09 07:24:55,277 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 07:24:55,277 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 07:24:55,277 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 07:24:55,389 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 07:24:55,389 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 07:45:04,530 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 07:45:04,530 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 07:45:04,530 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 07:45:04,531 - cycleflash - INFO - Compare PASS
+2022-07-09 07:45:15,736 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  48
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 07:45:15,737 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 07:45:15,737 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 07:45:15,737 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 07:45:15,737 - cycleflash - INFO -  - Execute Command:
+2022-07-09 07:45:15,737 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 07:45:43,666 - cycleflash - INFO -  - Execute Result:
+2022-07-09 07:45:43,666 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 07:45:43,667 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 07:45:43,667 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 07:45:43,752 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 07:45:43,752 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 08:05:52,713 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 08:05:52,713 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 08:05:52,713 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 08:05:52,713 - cycleflash - INFO - Compare PASS
+2022-07-09 08:06:01,665 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  49
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 08:06:01,666 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 08:06:01,666 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 08:06:01,666 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 08:06:01,666 - cycleflash - INFO -  - Execute Command:
+2022-07-09 08:06:01,666 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 08:06:31,664 - cycleflash - INFO -  - Execute Result:
+2022-07-09 08:06:31,664 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 08:06:31,664 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 08:06:31,664 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 08:06:31,824 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 08:06:31,824 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 08:26:41,338 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 08:26:41,339 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 08:26:41,339 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 08:26:41,339 - cycleflash - INFO - Compare PASS
+2022-07-09 08:26:50,083 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  50
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 08:26:50,083 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 08:26:50,083 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 08:26:50,083 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 08:26:50,084 - cycleflash - INFO -  - Execute Command:
+2022-07-09 08:26:50,084 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 08:27:20,460 - cycleflash - INFO -  - Execute Result:
+2022-07-09 08:27:20,460 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 08:27:20,460 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 08:27:20,461 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 08:27:20,591 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 08:27:20,591 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 08:47:29,396 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 08:47:29,396 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 08:47:29,396 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 08:47:29,396 - cycleflash - INFO - Compare PASS
+2022-07-09 08:47:38,762 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  51
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 08:47:38,762 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 08:47:38,762 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 08:47:38,763 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 08:47:38,763 - cycleflash - INFO -  - Execute Command:
+2022-07-09 08:47:38,763 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 08:48:06,900 - cycleflash - INFO -  - Execute Result:
+2022-07-09 08:48:06,900 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 08:48:06,901 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 08:48:06,901 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 08:48:07,098 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 08:48:07,099 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 09:08:16,427 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 09:08:16,427 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 09:08:16,427 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 09:08:16,428 - cycleflash - INFO - Compare PASS
+2022-07-09 09:08:25,087 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  52
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 09:08:25,087 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 09:08:25,088 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 09:08:25,088 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 09:08:25,088 - cycleflash - INFO -  - Execute Command:
+2022-07-09 09:08:25,088 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 09:08:52,296 - cycleflash - INFO -  - Execute Result:
+2022-07-09 09:08:52,296 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 09:08:52,297 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 09:08:52,297 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 09:08:52,360 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 09:08:52,360 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 09:29:01,933 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 09:29:01,933 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 09:29:01,933 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 09:29:01,934 - cycleflash - INFO - Compare PASS
+2022-07-09 09:29:11,686 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  53
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 09:29:11,686 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 09:29:11,686 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 09:29:11,686 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 09:29:11,686 - cycleflash - INFO -  - Execute Command:
+2022-07-09 09:29:11,687 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 09:29:40,109 - cycleflash - INFO -  - Execute Result:
+2022-07-09 09:29:40,110 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 09:29:40,110 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 09:29:40,110 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 09:29:40,236 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 09:29:40,236 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 09:49:48,991 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 09:49:48,991 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 09:49:48,991 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 09:49:48,991 - cycleflash - INFO - Compare PASS
+2022-07-09 09:49:57,872 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  54
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 09:49:57,873 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 09:49:57,873 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 09:49:57,873 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 09:49:57,873 - cycleflash - INFO -  - Execute Command:
+2022-07-09 09:49:57,873 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 09:50:28,070 - cycleflash - INFO -  - Execute Result:
+2022-07-09 09:50:28,071 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 09:50:28,071 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 09:50:28,071 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 09:50:28,134 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 09:50:28,135 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 10:10:37,648 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 10:10:37,648 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 10:10:37,648 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 10:10:37,648 - cycleflash - INFO - Compare PASS
+2022-07-09 10:10:46,195 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  55
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 10:10:46,195 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 10:10:46,195 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 10:10:46,195 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 10:10:46,196 - cycleflash - INFO -  - Execute Command:
+2022-07-09 10:10:46,196 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 10:11:17,468 - cycleflash - INFO -  - Execute Result:
+2022-07-09 10:11:17,468 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 10:11:17,468 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 10:11:17,468 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 10:11:17,662 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 10:11:17,663 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 10:31:26,608 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 10:31:26,608 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 10:31:26,608 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 10:31:26,608 - cycleflash - INFO - Compare PASS
+2022-07-09 10:31:35,151 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  56
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 10:31:35,151 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 10:31:35,152 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 10:31:35,152 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 10:31:35,152 - cycleflash - INFO -  - Execute Command:
+2022-07-09 10:31:35,152 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 10:32:06,937 - cycleflash - INFO -  - Execute Result:
+2022-07-09 10:32:06,937 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 10:32:06,938 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 10:32:06,938 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 10:32:07,352 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 10:32:07,352 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 10:52:16,585 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 10:52:16,585 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 10:52:16,585 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 10:52:16,585 - cycleflash - INFO - Compare PASS
+2022-07-09 10:52:25,384 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  57
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 10:52:25,385 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 10:52:25,385 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 10:52:25,385 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 10:52:25,385 - cycleflash - INFO -  - Execute Command:
+2022-07-09 10:52:25,385 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 10:52:53,979 - cycleflash - INFO -  - Execute Result:
+2022-07-09 10:52:53,980 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 10:52:53,980 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 10:52:53,980 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 10:52:54,068 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 10:52:54,069 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 11:13:03,105 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 11:13:03,105 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 11:13:03,105 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 11:13:03,105 - cycleflash - INFO - Compare PASS
+2022-07-09 11:13:12,861 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  58
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 11:13:12,861 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 11:13:12,861 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 11:13:12,862 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 11:13:12,862 - cycleflash - INFO -  - Execute Command:
+2022-07-09 11:13:12,862 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 11:13:39,838 - cycleflash - INFO -  - Execute Result:
+2022-07-09 11:13:39,838 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 11:13:39,839 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 11:13:39,839 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 11:13:39,910 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 11:13:39,910 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 11:33:48,894 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 11:33:48,894 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 11:33:48,894 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 11:33:48,894 - cycleflash - INFO - Compare PASS
+2022-07-09 11:33:57,412 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  59
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 11:33:57,413 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 11:33:57,413 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 11:33:57,413 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 11:33:57,413 - cycleflash - INFO -  - Execute Command:
+2022-07-09 11:33:57,413 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 11:34:27,761 - cycleflash - INFO -  - Execute Result:
+2022-07-09 11:34:27,761 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 11:34:27,761 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 11:34:27,761 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 11:34:27,861 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 11:34:27,862 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 11:54:36,663 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 11:54:36,664 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 11:54:36,664 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 11:54:36,664 - cycleflash - INFO - Compare PASS
+2022-07-09 11:54:45,817 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  60
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 11:54:45,817 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 11:54:45,817 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 11:54:45,817 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 11:54:45,817 - cycleflash - INFO -  - Execute Command:
+2022-07-09 11:54:45,818 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 11:55:16,128 - cycleflash - INFO -  - Execute Result:
+2022-07-09 11:55:16,129 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 11:55:16,129 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 11:55:16,129 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 11:55:16,289 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 11:55:16,289 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 12:15:25,554 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 12:15:25,554 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 12:15:25,554 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 12:15:25,554 - cycleflash - INFO - Compare PASS
+2022-07-09 12:15:34,594 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  61
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 12:15:34,594 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 12:15:34,594 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 12:15:34,594 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 12:15:34,595 - cycleflash - INFO -  - Execute Command:
+2022-07-09 12:15:34,595 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 12:16:02,454 - cycleflash - INFO -  - Execute Result:
+2022-07-09 12:16:02,454 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 12:16:02,454 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 12:16:02,454 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 12:16:02,560 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 12:16:02,560 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 12:36:12,124 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 12:36:12,124 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 12:36:12,124 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 12:36:12,124 - cycleflash - INFO - Compare PASS
+2022-07-09 12:36:21,184 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  62
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 12:36:21,184 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 12:36:21,184 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 12:36:21,184 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 12:36:21,185 - cycleflash - INFO -  - Execute Command:
+2022-07-09 12:36:21,185 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 12:36:48,867 - cycleflash - INFO -  - Execute Result:
+2022-07-09 12:36:48,868 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 12:36:48,868 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 12:36:48,868 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 12:36:49,022 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 12:36:49,022 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 12:56:57,750 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 12:56:57,751 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 12:56:57,751 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 12:56:57,751 - cycleflash - INFO - Compare PASS
+2022-07-09 12:57:08,194 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  63
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 12:57:08,194 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 12:57:08,194 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 12:57:08,194 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 12:57:08,194 - cycleflash - INFO -  - Execute Command:
+2022-07-09 12:57:08,195 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 12:57:36,409 - cycleflash - INFO -  - Execute Result:
+2022-07-09 12:57:36,409 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 12:57:36,409 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 12:57:36,410 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 12:57:36,478 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 12:57:36,479 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 13:17:45,155 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 13:17:45,156 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 13:17:45,156 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 13:17:45,156 - cycleflash - INFO - Compare PASS
+2022-07-09 13:17:54,359 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  64
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 13:17:54,360 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 13:17:54,360 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 13:17:54,360 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 13:17:54,360 - cycleflash - INFO -  - Execute Command:
+2022-07-09 13:17:54,360 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 13:18:25,616 - cycleflash - INFO -  - Execute Result:
+2022-07-09 13:18:25,617 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 13:18:25,617 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 13:18:25,617 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 13:18:25,768 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 13:18:25,768 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 13:38:35,149 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 13:38:35,149 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 13:38:35,149 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 13:38:35,149 - cycleflash - INFO - Compare PASS
+2022-07-09 13:38:43,652 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  65
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 13:38:43,652 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 13:38:43,653 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 13:38:43,653 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 13:38:43,653 - cycleflash - INFO -  - Execute Command:
+2022-07-09 13:38:43,653 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 13:39:14,606 - cycleflash - INFO -  - Execute Result:
+2022-07-09 13:39:14,606 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 13:39:14,606 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 13:39:14,606 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 13:39:14,757 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 13:39:14,757 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 13:59:23,627 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 13:59:23,627 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 13:59:23,627 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 13:59:23,627 - cycleflash - INFO - Compare PASS
+2022-07-09 13:59:32,635 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  66
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 13:59:32,636 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 13:59:32,636 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 13:59:32,636 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 13:59:32,636 - cycleflash - INFO -  - Execute Command:
+2022-07-09 13:59:32,636 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 14:00:00,374 - cycleflash - INFO -  - Execute Result:
+2022-07-09 14:00:00,375 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 14:00:00,375 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 14:00:00,375 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 14:00:00,485 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 14:00:00,485 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 14:20:10,187 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 14:20:10,188 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 14:20:10,188 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 14:20:10,188 - cycleflash - INFO - Compare PASS
+2022-07-09 14:20:18,987 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  67
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 14:20:18,988 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 14:20:18,988 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 14:20:18,988 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 14:20:18,988 - cycleflash - INFO -  - Execute Command:
+2022-07-09 14:20:18,988 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 14:20:47,038 - cycleflash - INFO -  - Execute Result:
+2022-07-09 14:20:47,038 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 14:20:47,038 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 14:20:47,039 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 14:20:47,142 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 14:20:47,142 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 14:40:56,243 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 14:40:56,244 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 14:40:56,244 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 14:40:56,244 - cycleflash - INFO - Compare PASS
+2022-07-09 14:41:04,857 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  68
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 14:41:04,857 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 14:41:04,857 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 14:41:04,857 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 14:41:04,857 - cycleflash - INFO -  - Execute Command:
+2022-07-09 14:41:04,857 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 14:41:34,038 - cycleflash - INFO -  - Execute Result:
+2022-07-09 14:41:34,038 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 14:41:34,039 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 14:41:34,039 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 14:41:34,138 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 14:41:34,138 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 15:01:43,533 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 15:01:43,533 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 15:01:43,534 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 15:01:43,534 - cycleflash - INFO - Compare PASS
+2022-07-09 15:01:52,203 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  69
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 15:01:52,204 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 15:01:52,204 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 15:01:52,204 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 15:01:52,204 - cycleflash - INFO -  - Execute Command:
+2022-07-09 15:01:52,204 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 15:02:22,675 - cycleflash - INFO -  - Execute Result:
+2022-07-09 15:02:22,675 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 15:02:22,675 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 15:02:22,675 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 15:02:22,819 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 15:02:22,819 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 15:22:31,877 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 15:22:31,878 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 15:22:31,878 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 15:22:31,878 - cycleflash - INFO - Compare PASS
+2022-07-09 15:22:40,795 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  70
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 15:22:40,795 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 15:22:40,795 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 15:22:40,795 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 15:22:40,795 - cycleflash - INFO -  - Execute Command:
+2022-07-09 15:22:40,795 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 15:23:09,227 - cycleflash - INFO -  - Execute Result:
+2022-07-09 15:23:09,227 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 15:23:09,227 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 15:23:09,227 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 15:23:09,367 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 15:23:09,367 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 15:43:18,104 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 15:43:18,104 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 15:43:18,104 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 15:43:18,104 - cycleflash - INFO - Compare PASS
+2022-07-09 15:43:27,141 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  71
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 15:43:27,141 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 15:43:27,142 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 15:43:27,142 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 15:43:27,142 - cycleflash - INFO -  - Execute Command:
+2022-07-09 15:43:27,142 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 15:43:54,812 - cycleflash - INFO -  - Execute Result:
+2022-07-09 15:43:54,812 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 15:43:54,812 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 15:43:54,812 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 15:43:54,943 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 15:43:54,943 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 16:04:03,812 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 16:04:03,812 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 16:04:03,812 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 16:04:03,813 - cycleflash - INFO - Compare PASS
+2022-07-09 16:04:14,246 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  72
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 16:04:14,247 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 16:04:14,247 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 16:04:14,247 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 16:04:14,247 - cycleflash - INFO -  - Execute Command:
+2022-07-09 16:04:14,247 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 16:04:41,806 - cycleflash - INFO -  - Execute Result:
+2022-07-09 16:04:41,806 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 16:04:41,807 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 16:04:41,807 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 16:04:41,993 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 16:04:41,993 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 16:24:50,844 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 16:24:50,844 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 16:24:50,844 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 16:24:50,845 - cycleflash - INFO - Compare PASS
+2022-07-09 16:25:00,102 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  73
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 16:25:00,103 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 16:25:00,103 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 16:25:00,103 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 16:25:00,103 - cycleflash - INFO -  - Execute Command:
+2022-07-09 16:25:00,103 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 16:25:30,308 - cycleflash - INFO -  - Execute Result:
+2022-07-09 16:25:30,308 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 16:25:30,308 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 16:25:30,309 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 16:25:30,461 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 16:25:30,462 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 16:45:39,235 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 16:45:39,236 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 16:45:39,236 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 16:45:39,236 - cycleflash - INFO - Compare PASS
+2022-07-09 16:45:48,547 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  74
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 16:45:48,547 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 16:45:48,547 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 16:45:48,547 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 16:45:48,547 - cycleflash - INFO -  - Execute Command:
+2022-07-09 16:45:48,548 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 16:46:19,163 - cycleflash - INFO -  - Execute Result:
+2022-07-09 16:46:19,163 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 16:46:19,163 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 16:46:19,164 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 16:46:19,244 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 16:46:19,244 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 17:06:28,055 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 17:06:28,055 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 17:06:28,055 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 17:06:28,055 - cycleflash - INFO - Compare PASS
+2022-07-09 17:06:37,396 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  75
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 17:06:37,397 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 17:06:37,397 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 17:06:37,397 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 17:06:37,397 - cycleflash - INFO -  - Execute Command:
+2022-07-09 17:06:37,397 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 17:07:05,214 - cycleflash - INFO -  - Execute Result:
+2022-07-09 17:07:05,214 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 17:07:05,215 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 17:07:05,215 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 17:07:05,411 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 17:07:05,412 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 17:27:15,935 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 17:27:15,935 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 17:27:15,935 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 17:27:15,935 - cycleflash - INFO - Compare PASS
+2022-07-09 17:27:25,064 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  76
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 17:27:25,065 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 17:27:25,065 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 17:27:25,065 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 17:27:25,065 - cycleflash - INFO -  - Execute Command:
+2022-07-09 17:27:25,065 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 17:27:52,740 - cycleflash - INFO -  - Execute Result:
+2022-07-09 17:27:52,740 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 17:27:52,740 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 17:27:52,740 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 17:27:52,836 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 17:27:52,836 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 17:48:01,755 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 17:48:01,755 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 17:48:01,755 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 17:48:01,755 - cycleflash - INFO - Compare PASS
+2022-07-09 17:48:11,764 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  77
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 17:48:11,765 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 17:48:11,765 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 17:48:11,765 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 17:48:11,765 - cycleflash - INFO -  - Execute Command:
+2022-07-09 17:48:11,765 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 17:48:39,147 - cycleflash - INFO -  - Execute Result:
+2022-07-09 17:48:39,147 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 17:48:39,148 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 17:48:39,148 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 17:48:39,342 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 17:48:39,342 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 18:08:48,159 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 18:08:48,159 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 18:08:48,159 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 18:08:48,159 - cycleflash - INFO - Compare PASS
+2022-07-09 18:08:56,805 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  78
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 18:08:56,805 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 18:08:56,805 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 18:08:56,805 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 18:08:56,806 - cycleflash - INFO -  - Execute Command:
+2022-07-09 18:08:56,806 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 18:09:26,969 - cycleflash - INFO -  - Execute Result:
+2022-07-09 18:09:26,969 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 18:09:26,969 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 18:09:26,969 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 18:09:27,144 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 18:09:27,144 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 18:29:35,957 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 18:29:35,957 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 18:29:35,958 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 18:29:35,958 - cycleflash - INFO - Compare PASS
+2022-07-09 18:29:44,737 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  79
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 18:29:44,737 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 18:29:44,737 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 18:29:44,737 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 18:29:44,737 - cycleflash - INFO -  - Execute Command:
+2022-07-09 18:29:44,738 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 18:30:15,518 - cycleflash - INFO -  - Execute Result:
+2022-07-09 18:30:15,519 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 18:30:15,519 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 18:30:15,519 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 18:30:15,672 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 18:30:15,672 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 18:50:24,540 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 18:50:24,541 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 18:50:24,541 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 18:50:24,541 - cycleflash - INFO - Compare PASS
+2022-07-09 18:50:33,821 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  80
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 18:50:33,821 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 18:50:33,821 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 18:50:33,821 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 18:50:33,822 - cycleflash - INFO -  - Execute Command:
+2022-07-09 18:50:33,822 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 18:51:01,697 - cycleflash - INFO -  - Execute Result:
+2022-07-09 18:51:01,697 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 18:51:01,697 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 18:51:01,698 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 18:51:01,871 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 18:51:01,871 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 19:11:11,465 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 19:11:11,466 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 19:11:11,466 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 19:11:11,466 - cycleflash - INFO - Compare PASS
+2022-07-09 19:11:20,896 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  81
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 19:11:20,896 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 19:11:20,896 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 19:11:20,897 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 19:11:20,897 - cycleflash - INFO -  - Execute Command:
+2022-07-09 19:11:20,897 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 19:11:49,129 - cycleflash - INFO -  - Execute Result:
+2022-07-09 19:11:49,130 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 19:11:49,130 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 19:11:49,130 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 19:11:49,251 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 19:11:49,252 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 19:31:58,495 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 19:31:58,495 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 19:31:58,495 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 19:31:58,495 - cycleflash - INFO - Compare PASS
+2022-07-09 19:32:08,231 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  82
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 19:32:08,231 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 19:32:08,231 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 19:32:08,231 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 19:32:08,232 - cycleflash - INFO -  - Execute Command:
+2022-07-09 19:32:08,232 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 19:32:36,339 - cycleflash - INFO -  - Execute Result:
+2022-07-09 19:32:36,339 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 19:32:36,339 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 19:32:36,339 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 19:32:36,462 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 19:32:36,462 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 19:52:45,558 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 19:52:45,558 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 19:52:45,559 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 19:52:45,559 - cycleflash - INFO - Compare PASS
+2022-07-09 19:52:54,541 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  83
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 19:52:54,542 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 19:52:54,542 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 19:52:54,542 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 19:52:54,542 - cycleflash - INFO -  - Execute Command:
+2022-07-09 19:52:54,542 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 19:53:25,243 - cycleflash - INFO -  - Execute Result:
+2022-07-09 19:53:25,243 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 19:53:25,243 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 19:53:25,243 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 19:53:25,360 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 19:53:25,360 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 20:13:34,309 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 20:13:34,310 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 20:13:34,310 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 20:13:34,310 - cycleflash - INFO - Compare PASS
+2022-07-09 20:13:42,980 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  84
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 20:13:42,980 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 20:13:42,980 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 20:13:42,981 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 20:13:42,981 - cycleflash - INFO -  - Execute Command:
+2022-07-09 20:13:42,981 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 20:14:14,827 - cycleflash - INFO -  - Execute Result:
+2022-07-09 20:14:14,827 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 20:14:14,827 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 20:14:14,827 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 20:14:14,920 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 20:14:14,920 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 20:34:23,693 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 20:34:23,694 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 20:34:23,694 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 20:34:23,694 - cycleflash - INFO - Compare PASS
+2022-07-09 20:34:32,973 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  85
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 20:34:32,974 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 20:34:32,974 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 20:34:32,974 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 20:34:32,974 - cycleflash - INFO -  - Execute Command:
+2022-07-09 20:34:32,974 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 20:35:01,000 - cycleflash - INFO -  - Execute Result:
+2022-07-09 20:35:01,000 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 20:35:01,000 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 20:35:01,001 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 20:35:01,100 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 20:35:01,101 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 20:55:10,988 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 20:55:10,988 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 20:55:10,989 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 20:55:10,989 - cycleflash - INFO - Compare PASS
+2022-07-09 20:55:19,897 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  86
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 20:55:19,898 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 20:55:19,898 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 20:55:19,898 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 20:55:19,899 - cycleflash - INFO -  - Execute Command:
+2022-07-09 20:55:19,899 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 20:55:46,815 - cycleflash - INFO -  - Execute Result:
+2022-07-09 20:55:46,816 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 20:55:46,816 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 20:55:46,816 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 20:55:46,879 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 20:55:46,879 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 21:15:55,623 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 21:15:55,624 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 21:15:55,624 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 21:15:55,624 - cycleflash - INFO - Compare PASS
+2022-07-09 21:16:04,695 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  87
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 21:16:04,696 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 21:16:04,696 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 21:16:04,696 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 21:16:04,696 - cycleflash - INFO -  - Execute Command:
+2022-07-09 21:16:04,696 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 21:16:33,644 - cycleflash - INFO -  - Execute Result:
+2022-07-09 21:16:33,644 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 21:16:33,644 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 21:16:33,644 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 21:16:33,929 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 21:16:33,929 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 21:36:42,901 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 21:36:42,902 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 21:36:42,902 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 21:36:42,902 - cycleflash - INFO - Compare PASS
+2022-07-09 21:36:51,384 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  88
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 21:36:51,385 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 21:36:51,385 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 21:36:51,385 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 21:36:51,385 - cycleflash - INFO -  - Execute Command:
+2022-07-09 21:36:51,385 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 21:37:21,838 - cycleflash - INFO -  - Execute Result:
+2022-07-09 21:37:21,838 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 21:37:21,839 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 21:37:21,839 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 21:37:21,905 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 21:37:21,905 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 21:57:30,941 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 21:57:30,942 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 21:57:30,942 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 21:57:30,942 - cycleflash - INFO - Compare PASS
+2022-07-09 21:57:40,179 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  89
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 21:57:40,179 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 21:57:40,179 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 21:57:40,179 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 21:57:40,179 - cycleflash - INFO -  - Execute Command:
+2022-07-09 21:57:40,180 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 21:58:09,341 - cycleflash - INFO -  - Execute Result:
+2022-07-09 21:58:09,342 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 21:58:09,342 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 21:58:09,342 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 21:58:09,567 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 21:58:09,568 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 22:18:18,215 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 22:18:18,215 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 22:18:18,215 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 22:18:18,215 - cycleflash - INFO - Compare PASS
+2022-07-09 22:18:26,999 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  90
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 22:18:26,999 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 22:18:26,999 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 22:18:26,999 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 22:18:27,000 - cycleflash - INFO -  - Execute Command:
+2022-07-09 22:18:27,000 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 22:18:54,807 - cycleflash - INFO -  - Execute Result:
+2022-07-09 22:18:54,807 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 22:18:54,808 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 22:18:54,808 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 22:18:54,879 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 22:18:54,879 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 22:39:04,095 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 22:39:04,095 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 22:39:04,095 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 22:39:04,095 - cycleflash - INFO - Compare PASS
+2022-07-09 22:39:13,599 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  91
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.05.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN
+
+2022-07-09 22:39:13,600 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 22:39:13,600 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 22:39:13,600 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 22:39:13,600 - cycleflash - INFO -  - Execute Command:
+2022-07-09 22:39:13,600 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.05.00_ENC.BIN -t BIOS -e auto
+2022-07-09 22:39:41,583 - cycleflash - INFO -  - Execute Result:
+2022-07-09 22:39:41,583 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 22:39:41,583 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 22:39:41,583 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 22:39:41,658 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 22:39:41,658 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 22:59:50,329 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 22:59:50,329 - cycleflash - INFO -  - Current: 1.05.00
+2022-07-09 22:59:50,330 - cycleflash - INFO -  - Criteria: 1.05.00
+2022-07-09 22:59:50,330 - cycleflash - INFO - Compare PASS
+2022-07-09 22:59:59,793 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  92
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.05.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 22:59:59,794 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 22:59:59,794 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 22:59:59,794 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 22:59:59,794 - cycleflash - INFO -  - Execute Command:
+2022-07-09 22:59:59,794 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 23:00:29,974 - cycleflash - INFO -  - Execute Result:
+2022-07-09 23:00:29,974 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 23:00:29,975 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 23:00:29,975 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 23:00:30,162 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 23:00:30,162 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 23:20:39,649 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 23:20:39,649 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-09 23:20:39,650 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-09 23:20:39,650 - cycleflash - INFO - Compare PASS
+2022-07-09 23:20:48,297 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  93
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-09 23:20:48,297 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 23:20:48,297 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 23:20:48,298 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 23:20:48,298 - cycleflash - INFO -  - Execute Command:
+2022-07-09 23:20:48,298 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-09 23:21:18,977 - cycleflash - INFO -  - Execute Result:
+2022-07-09 23:21:18,977 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 23:21:18,977 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 23:21:18,977 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 23:21:19,038 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 23:21:19,038 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-09 23:41:27,969 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-09 23:41:27,969 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-09 23:41:27,969 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-09 23:41:27,969 - cycleflash - INFO - Compare PASS
+2022-07-09 23:41:36,544 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  94
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-09 23:41:36,545 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-09 23:41:36,545 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-09 23:41:36,545 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-09 23:41:36,545 - cycleflash - INFO -  - Execute Command:
+2022-07-09 23:41:36,545 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-09 23:42:04,413 - cycleflash - INFO -  - Execute Result:
+2022-07-09 23:42:04,413 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-09 23:42:04,413 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-09 23:42:04,413 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-09 23:42:04,557 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-09 23:42:04,557 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-10 00:02:14,622 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-10 00:02:14,623 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-10 00:02:14,623 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-10 00:02:14,623 - cycleflash - INFO - Compare PASS
+2022-07-10 00:02:23,896 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  95
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-10 00:02:23,896 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-10 00:02:23,896 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-10 00:02:23,897 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-10 00:02:23,897 - cycleflash - INFO -  - Execute Command:
+2022-07-10 00:02:23,897 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-10 00:02:51,917 - cycleflash - INFO -  - Execute Result:
+2022-07-10 00:02:51,917 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-10 00:02:51,917 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-10 00:02:51,917 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-10 00:02:52,194 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-10 00:02:52,194 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-10 00:23:01,368 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-10 00:23:01,369 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-10 00:23:01,369 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-10 00:23:01,369 - cycleflash - INFO - Compare PASS
+2022-07-10 00:23:11,425 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  96
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-10 00:23:11,426 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-10 00:23:11,426 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-10 00:23:11,426 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-10 00:23:11,426 - cycleflash - INFO -  - Execute Command:
+2022-07-10 00:23:11,426 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-10 00:23:39,687 - cycleflash - INFO -  - Execute Result:
+2022-07-10 00:23:39,687 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-10 00:23:39,688 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-10 00:23:39,688 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-10 00:23:39,791 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-10 00:23:39,792 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-10 00:43:48,572 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-10 00:43:48,572 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-10 00:43:48,572 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-10 00:43:48,572 - cycleflash - INFO - Compare PASS
+2022-07-10 00:43:57,764 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  97
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-10 00:43:57,765 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-10 00:43:57,765 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-10 00:43:57,765 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-10 00:43:57,765 - cycleflash - INFO -  - Execute Command:
+2022-07-10 00:43:57,765 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-10 00:44:28,050 - cycleflash - INFO -  - Execute Result:
+2022-07-10 00:44:28,050 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-10 00:44:28,050 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-10 00:44:28,050 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-10 00:44:28,140 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-10 00:44:28,141 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-10 01:04:37,433 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-10 01:04:37,433 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-10 01:04:37,433 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-10 01:04:37,433 - cycleflash - INFO - Compare PASS
+2022-07-10 01:04:46,247 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  98
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-10 01:04:46,247 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-10 01:04:46,248 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-10 01:04:46,248 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-10 01:04:46,248 - cycleflash - INFO -  - Execute Command:
+2022-07-10 01:04:46,248 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-10 01:05:16,622 - cycleflash - INFO -  - Execute Result:
+2022-07-10 01:05:16,622 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-10 01:05:16,622 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-10 01:05:16,622 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-10 01:05:16,684 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-10 01:05:16,684 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-10 01:25:25,871 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-10 01:25:25,871 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-10 01:25:25,871 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-10 01:25:25,872 - cycleflash - INFO - Compare PASS
+2022-07-10 01:25:34,909 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  99
+Flash Device:     BIOS
+FLash Operation:  download
+Current Version:  1.06.00
+Upgrade Version:  1.03.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN
+
+2022-07-10 01:25:34,909 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-10 01:25:34,909 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-10 01:25:34,910 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-10 01:25:34,910 - cycleflash - INFO -  - Execute Command:
+2022-07-10 01:25:34,910 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.03.00_ENC.BIN -t BIOS -e auto
+2022-07-10 01:26:02,632 - cycleflash - INFO -  - Execute Result:
+2022-07-10 01:26:02,632 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-10 01:26:02,632 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-10 01:26:02,632 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-10 01:26:02,715 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-10 01:26:02,715 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-10 01:46:12,964 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-10 01:46:12,964 - cycleflash - INFO -  - Current: 1.03.00
+2022-07-10 01:46:12,964 - cycleflash - INFO -  - Criteria: 1.03.00
+2022-07-10 01:46:12,964 - cycleflash - INFO - Compare PASS
+2022-07-10 01:46:21,838 - cycleflash - INFO - 
+================================================================================
+Run Flash Cycle:  100
+Flash Device:     BIOS
+FLash Operation:  upgrade
+Current Version:  1.03.00
+Upgrade Version:  1.06.00
+Upgrade Firmware: /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN
+
+2022-07-10 01:46:21,839 - cycleflash - INFO - Starting Flash as following Info:
+2022-07-10 01:46:21,839 - cycleflash - INFO -  - Flash Tool Path: /home/simon/Tools/utool/utool_linux_1.51/uTool
+2022-07-10 01:46:21,839 - cycleflash - INFO -  - Current Location: /root/PycharmProjects/CycleFirmware-tv0.1
+2022-07-10 01:46:21,839 - cycleflash - INFO -  - Execute Command:
+2022-07-10 01:46:21,839 - cycleflash - INFO -    /home/simon/Tools/utool/utool_linux_1.51/uTool -H 192.168.0.39 -U albert -P admin fwupdate -u /root/PycharmProjects/CycleFirmware-tv0.1/images/1.06.00_ENC.BIN -t BIOS -e auto
+2022-07-10 01:46:49,948 - cycleflash - INFO -  - Execute Result:
+2022-07-10 01:46:49,948 - cycleflash - INFO -    {'State': 'Success', 'Message': ['Apply(FLASH) pending, host is power on now, image save in BMC FLASH and will apply later, trigger: poweroff, dcpowercycle']}
+2022-07-10 01:46:49,949 - cycleflash - INFO - Starting Power Cycle Trigger Firmware Active
+2022-07-10 01:46:49,949 - cycleflash - INFO -  - Excute Command: ipmitool -I lanplus -H 192.168.0.39 -U albert -P admin chassis power cycle
+2022-07-10 01:46:50,039 - cycleflash - INFO -  - Command Return: Chassis Power Control: Cycle
+2022-07-10 01:46:50,039 - cycleflash - INFO - Waiting 1200 Seconds for Host Up
+2022-07-10 02:06:58,944 - cycleflash - INFO - Starting Compare Firmware Version
+2022-07-10 02:06:58,945 - cycleflash - INFO -  - Current: 1.06.00
+2022-07-10 02:06:58,945 - cycleflash - INFO -  - Criteria: 1.06.00
+2022-07-10 02:06:58,945 - cycleflash - INFO - Compare PASS
