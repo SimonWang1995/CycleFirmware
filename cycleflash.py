@@ -1,8 +1,6 @@
 from __future__ import print_function
 import os
 import random
-import ipaddress
-import argparse
 import json
 import time
 import datetime
@@ -88,6 +86,7 @@ class CycleFlash(FirmwareFlash):
         super().__init__(flashtype, **kwargs)
         self.loops = loops
         self.bmc_ip = kwargs['ip']
+        self.IPMI = "ipmitool -I lanplus -H {ip} -U {username} -P {password}".format(**kwargs)
         self.flashcfg = get_flashcfg(flashtype)
         logger.info(str(json.dumps(self.flashcfg, indent=4)))
         self.op_list = ['upgrade', 'download']
@@ -170,6 +169,7 @@ class CycleFlash(FirmwareFlash):
             raise TimeoutError('Ping BMC IP {0} timeout {1}, maybe BMC is dead, check it!!!'.format(self.bmc_ip, wait_bmc_up))
 
     def check(self):
+        "Check user/fru/network/sdr"
         pass
 
     def compare_ver(self, criteria_ver, current_ver):
