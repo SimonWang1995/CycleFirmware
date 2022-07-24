@@ -2,8 +2,11 @@ import os
 import logging
 import subprocess
 
+_LOG = logging.getLogger(__name__)
+
 
 def excute(*cmd, **kwargs):
+    _LOG.info("Excute {}".format(cmd))
     obj = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
                            stderr=subprocess.PIPE, shell=True)
     out, err = obj.communicate()

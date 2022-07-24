@@ -1,7 +1,8 @@
 from __future__ import print_function
 import os
 import random
-
+import ipaddress
+import argparse
 import json
 import time
 import datetime
@@ -10,7 +11,7 @@ import logging
 from textwrap import dedent
 from lib.utils import excute
 from lib.logreport import put_log
-from lib.configparser import get_utool, get_flashcfg, 0
+from lib.configparser import get_utool, get_flashcfg, get_hostinfo
 
 
 HOMEDIR = os.path.dirname(os.path.abspath(__file__))
@@ -86,7 +87,9 @@ class CycleFlash(FirmwareFlash):
     def __init__(self, flashtype, loops, **kwargs):
         super().__init__(flashtype, **kwargs)
         self.loops = loops
+        self.bmc_ip = kwargs['ip']
         self.flashcfg = get_flashcfg(flashtype)
+        logger.info(str(json.dumps(self.flashcfg, indent=4)))
         self.op_list = ['upgrade', 'download']
         self.split_line = "="*80
         self.res_list = []
@@ -145,27 +148,26 @@ class CycleFlash(FirmwareFlash):
         HOSTIP = HOSTINFO['ip']
         wait_os_up = 1200
         wait_bmc_up = 80
-        flag = False
+        start_time = time.time()
+        cost = 0
         if self.flashtype in ['CPLD', 'BIOS']:
-            logger.info('Waiting {0} Seconds for Host Up'.format(str(wait_os_up)))
-            time.sleep(wait_os_up)
-            for i in range(10):
+            logger.info('Waiting Host OS Up'.format(str(wait_os_up)))
+            while cost < wait_os_up:
                 if not os.system('ping -c 1 {0} > /dev/null 2>&1'.format(HOSTIP)):
-                    flag = True
-                    break
-                logger.info('Retry Connect Host {0} times'.format(str(i)))
-                time.sleep(5)
-            # raise RuntimeError('Host is Hang, Can\'t Ping Host:' + HOSTIP)
+                    return
+                else:
+                    time.sleep(5)
+                cost = time.time() - start_time
+            raise TimeoutError('Ping Host ip {0} timeout {1}, maybe Host Hang, Check it!!! '.format(HOSTIP, wait_os_up))
         else:
-            logger.info('Waiting {0} Seconds for BMC Up'.format(str(wait_os_up)))
-            time.sleep(wait_bmc_up)
-            for i in range(10):
-                # if os.system('ping -c 1 {0} > /dev/null 2>&1'.format(HOSTIP)):
-                #     flag = True
-                #     break
-                logger.info('Retry Connect BMC {0} times'.format(str(i)))
-                time.sleep(5)
-            raise RuntimeError('BMC is dead')
+            logger.info('Waiting BMC Up'.format(str(wait_os_up)))
+            while cost < wait_bmc_up:
+                if not os.system('ping -c 1 {0} > /dev/null 2>&1'.format(self.bmc_ip)):
+                    return
+                else:
+                    time.sleep(5)
+                cost = time.time() - start_time
+            raise TimeoutError('Ping BMC IP {0} timeout {1}, maybe BMC is dead, check it!!!'.format(self.bmc_ip, wait_bmc_up))
 
     def check(self):
         pass
