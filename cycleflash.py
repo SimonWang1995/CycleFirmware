@@ -9,6 +9,7 @@ import logging
 from textwrap import dedent
 from lib.utils import excute
 from lib.logreport import put_log
+from lib.logscheck import LogsCheck
 from lib.configparser import get_utool, get_flashcfg, get_hostinfo
 
 
