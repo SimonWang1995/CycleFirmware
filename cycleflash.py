@@ -55,7 +55,7 @@ class FirmwareFlash:
         put_log(self.flashlog, 'Flash {0} Image: {1}\n'.format(self.flashtype, image))
         try:
             out, err = excute(flashcmd)
-            res = re.search("({.*})", out, re.I|re.M|re.S).group()
+            res = re.search("({.*})", out, re.I | re.M | re.S).group()
             res = json.loads(res)
             put_log(self.flashlog, out)
             logger.info(' - Execute Result:')
@@ -87,7 +87,8 @@ class CycleFlash(FirmwareFlash):
         super().__init__(flashtype, **kwargs)
         self.loops = loops
         self.bmc_ip = kwargs['ip']
-        self.IPMI = "ipmitool -I lanplus -H {ip} -U {username} -P {password}".format(**kwargs)
+        # self.IPMI = "ipmitool -I lanplus -H {ip} -U {username} -P {password}".format(**kwargs)
+        self.logchker = LogsCheck(LOGDIR, **kwargs)
         self.flashcfg = get_flashcfg(flashtype)
         logger.info(str(json.dumps(self.flashcfg, indent=4)))
         self.op_list = ['upgrade', 'download']
@@ -169,7 +170,7 @@ class CycleFlash(FirmwareFlash):
                 cost = time.time() - start_time
             raise TimeoutError('Ping BMC IP {0} timeout {1}, maybe BMC is dead, check it!!!'.format(self.bmc_ip, wait_bmc_up))
 
-    def check(self):
+    def check(self, count):
         "Check user/fru/network/sdr"
         pass
 
@@ -202,6 +203,7 @@ class CycleFlash(FirmwareFlash):
         )
         msg = tmp.format(self.split_line, str(self.passcount), str(self.failcount),
                          str(self.failcount/(self.failcount+self.passcount)))
+        put_log(self.summary_log, msg)
 
     def run(self):
         for count in range(1, self.loops+1):
@@ -225,6 +227,7 @@ class CycleFlash(FirmwareFlash):
             self.res['Current Version'] = cur_ver
             compare_res = self.compare_ver(flashversion, cur_ver)
             self.res['Result'] = compare_res
+            self.check(count)
             put_log(self.summary_log, str(datetime.datetime.now()) + str(self.res))
             self.res_list.append(self.res)
         self.summary()
